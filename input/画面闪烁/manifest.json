@@ -1,0 +1,48 @@
+{
+  "type": "flicker",
+  "type_cn": "画面闪烁",
+  "fps": 30,
+  "width": 852,
+  "height": 480,
+  "total_frames": 2936,
+  "frame_pattern": "frame_%05d.png",
+  "layout_rule": "5 次事件，持续 5/10/15/20/30 帧，间隔>=600 帧（20s）；起点落在运动区段",
+  "episodes": [
+    {
+      "seq": 1,
+      "start_frame": 63,
+      "end_frame": 122,
+      "duration_frames": 60,
+      "flip_rate_per_sec": 5
+    },
+    {
+      "seq": 2,
+      "start_frame": 858,
+      "end_frame": 917,
+      "duration_frames": 60,
+      "flip_rate_per_sec": 10
+    },
+    {
+      "seq": 3,
+      "start_frame": 1517,
+      "end_frame": 1576,
+      "duration_frames": 60,
+      "flip_rate_per_sec": 15
+    },
+    {
+      "seq": 4,
+      "start_frame": 2176,
+      "end_frame": 2235,
+      "duration_frames": 60,
+      "flip_rate_per_sec": 20
+    },
+    {
+      "seq": 5,
+      "start_frame": 2835,
+      "end_frame": 2894,
+      "duration_frames": 60,
+      "flip_rate_per_sec": 30
+    }
+  ],
+  "note": "每次事件 60 帧（2 秒），原帧与 20% 亮度暗帧往复；暗帧判定 (t*freq)//30 % 2 == 1，t 为窗口内相对帧号"
+}

@@ -1,0 +1,77 @@
+# ============================================================
+# field 档：现场长跑用。沿用原《黑屏和卡顿检测.py》的时间语义
+# （黑屏 5s 确认 / 10s 严重，卡顿 10s 静默恢复），保证与原脚本结论可比。
+# 时间阈以「帧」表达（现场 30fps），与实际帧率无关的换算在检测器内完成。
+# ============================================================
+
+luma:
+  enabled: true
+  thumbnail_width: 85
+  thumbnail_height: 48
+  black_brightness_threshold: 25.0
+  black_pixel_threshold: 30
+  black_ratio_threshold: 0.95
+  black_confirm_frames: 150        # 5s @30fps
+  black_serious_frames: 300        # 10s
+  black_end_tolerance_frames: 6
+  white_brightness_threshold: 235.0
+  white_pixel_threshold: 225
+  white_ratio_threshold: 0.95
+  white_confirm_frames: 150
+  white_serious_frames: 300
+  white_end_tolerance_frames: 6
+  flicker_window_frames: 30
+  flicker_min_amplitude: 15.0      # 跳变幅度阈值（现场有压缩噪声，比 eval 更保守）
+  flicker_min_rate: 3.0
+  flicker_end_tolerance_frames: 15
+
+stutter:
+  enabled: true
+  analysis_every_n_frames: 2       # 15fps 分析节拍
+  analysis_width: 320
+  analysis_height: 180
+  changed_pixel_threshold: 5
+  duplicate_mean_diff: 2.5
+  duplicate_changed_ratio: 0.02
+  motion_mean_diff: 2.8
+  motion_changed_ratio: 0.03
+  required_motion_frames: 15       # 0.5s
+  motion_break_tolerance_frames: 8
+  motion_arm_timeout_frames: 180
+  duplicate_trigger_frames: 8      # 0.5s 连续重复
+  duplicate_break_tolerance_frames: 6
+  window_frames: 180               # 6s
+  duplicate_ratio_threshold: 0.10
+  min_duplicate_bursts: 2
+  active_bad_burst_frames: 6
+  active_window_frames: 180
+  recovery_quiet_frames: 300       # 10s
+  dark_brightness_threshold: 25.0
+  dark_black_ratio: 0.95
+
+corruption:
+  enabled: true
+  tear_band_height: 30
+  tear_boundary_step: 16
+  tear_shift_search: 24
+  tear_min_shift_diff: 4
+  tear_downscale_width: 256
+  tear_min_event_frames: 3
+  tear_end_tolerance_frames: 6
+  block_grid_cols: 16
+  block_grid_rows: 9
+  frozen_block_max_diff: 1.0
+  global_motion_min_ratio: 0.5
+  frozen_min_blocks: 6
+  frozen_min_event_frames: 6
+  blocking_grid: 8
+  blocking_min_span: 0.3
+
+avsync:
+  enabled: true
+  search_window_ms: 1500
+  cut_mean_diff_threshold: 14.0
+  onset_flux_factor: 2.0
+  onset_min_interval_frames: 8
+  min_matched_pairs: 8
+  block_rms_threshold: 0.001

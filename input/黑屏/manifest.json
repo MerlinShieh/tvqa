@@ -1,0 +1,43 @@
+{
+  "type": "black_screen",
+  "type_cn": "黑屏",
+  "fps": 30,
+  "width": 852,
+  "height": 480,
+  "total_frames": 2936,
+  "frame_pattern": "frame_%05d.png",
+  "layout_rule": "5 次事件，持续 5/10/15/20/30 帧，间隔>=600 帧（20s）；起点落在运动区段",
+  "episodes": [
+    {
+      "seq": 1,
+      "start_frame": 63,
+      "end_frame": 67,
+      "duration_frames": 5
+    },
+    {
+      "seq": 2,
+      "start_frame": 858,
+      "end_frame": 867,
+      "duration_frames": 10
+    },
+    {
+      "seq": 3,
+      "start_frame": 1503,
+      "end_frame": 1517,
+      "duration_frames": 15
+    },
+    {
+      "seq": 4,
+      "start_frame": 2203,
+      "end_frame": 2222,
+      "duration_frames": 20
+    },
+    {
+      "seq": 5,
+      "start_frame": 2822,
+      "end_frame": 2851,
+      "duration_frames": 30
+    }
+  ],
+  "note": "事件窗口内为纯黑帧（灰度全 0，满足检测器 均亮<=25 且黑占比>=95%）"
+}

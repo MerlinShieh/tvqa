@@ -1,0 +1,60 @@
+# ============================================================
+# tvqa 全局默认配置
+# 阈值/确认时长等检测标准全部收敛在 profiles/ 下的档位文件；
+# 本文件只定义「非阈值」的工程参数与设备选择。
+# 硬件到位后：把 video/audio/serial/adb 的 backend 与设备名改成真实值即可。
+# ============================================================
+
+output_root: output
+
+log:
+  console_level: INFO
+  file_level: DEBUG
+
+# ---------------- 数据源 ----------------
+video:
+  backend: frames_dir          # frames_dir | video_file | capture_card
+  path: input/frames           # frames_dir 用：帧序列目录
+  fps: 30.0
+  video_file: input/example.mp4        # video_file 用
+  index: 0                   # capture_card 用：设备编号，可试 1/2/3
+  set_resolution: false
+  width: 1920
+  height: 1080
+  set_fps: false
+
+audio:
+  backend: audio_file          # audio_file | sounddevice
+  path: input/example.mp4      # 从该文件抽音轨（也可直接指 m4a/wav）
+  samplerate: 48000
+  block_samples: 1024
+  device_name: ""              # sounddevice 用：输入设备名（可留空用默认）
+
+# ---------------- 系统信号通道（当前均无硬件，默认 mock）----------------
+serial:
+  backend: mock                # mock | pyserial
+  port: COM3
+  baudrate: 115200
+
+adb:
+  backend: mock                # mock | real
+  device: ""                   # adb -s 序列号，可空
+
+# ---------------- 检测器开关 ----------------
+detectors:
+  luma:      {enabled: true}
+  stutter:   {enabled: true}
+  corruption: {enabled: true}
+  avsync:    {enabled: true}   # 仅双流分析场景生效（音画不同步评测）
+
+# ---------------- 评测口径（记分卡如何对账真值）----------------
+evaluate:
+  match_tolerance_frames: 10     # 匹配容忍：真值区间双向扩张 N 帧后再算重叠（30≈1 秒）
+  match_min_iou: 0.05            # 算作匹配的最小重叠度
+  ignore_events_below_frames: 0  # 短于该帧数的检出事件不计入评测（如 3 可滤掉 1~2 帧噪声事件）
+
+# ---------------- 证据与归档 ----------------
+evidence:
+  jpg_quality: 95
+  frames_per_event: [start, mid, end]   # 每个事件保存的代表帧
+  ring_buffer_frames: 150               # 代表帧回溯缓冲大小

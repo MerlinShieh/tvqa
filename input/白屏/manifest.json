@@ -1,0 +1,43 @@
+{
+  "type": "white_screen",
+  "type_cn": "白屏",
+  "fps": 30,
+  "width": 852,
+  "height": 480,
+  "total_frames": 2936,
+  "frame_pattern": "frame_%05d.png",
+  "layout_rule": "5 次事件，持续 5/10/15/20/30 帧，间隔>=600 帧（20s）；起点落在运动区段",
+  "episodes": [
+    {
+      "seq": 1,
+      "start_frame": 63,
+      "end_frame": 67,
+      "duration_frames": 5
+    },
+    {
+      "seq": 2,
+      "start_frame": 858,
+      "end_frame": 867,
+      "duration_frames": 10
+    },
+    {
+      "seq": 3,
+      "start_frame": 1467,
+      "end_frame": 1481,
+      "duration_frames": 15
+    },
+    {
+      "seq": 4,
+      "start_frame": 2090,
+      "end_frame": 2109,
+      "duration_frames": 20
+    },
+    {
+      "seq": 5,
+      "start_frame": 2743,
+      "end_frame": 2772,
+      "duration_frames": 30
+    }
+  ],
+  "note": "事件窗口内为纯白帧（灰度全 255，满足检测器 均亮>=235 且白占比>=95%）"
+}

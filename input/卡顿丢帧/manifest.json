@@ -1,0 +1,68 @@
+{
+  "type": "freeze_drop",
+  "type_cn": "卡顿丢帧",
+  "fps": 30,
+  "width": 852,
+  "height": 480,
+  "total_frames": 2936,
+  "frame_pattern": "frame_%05d.png",
+  "layout_rule": "5 次事件，持续 5/10/15/20/30 帧，间隔>=600 帧（20s）；起点落在运动区段",
+  "episodes": [
+    {
+      "seq": 1,
+      "start_frame": 63,
+      "end_frame": 67,
+      "duration_frames": 5,
+      "freeze_source_frame": 63,
+      "dropped_source_frames": [
+        64,
+        67
+      ]
+    },
+    {
+      "seq": 2,
+      "start_frame": 824,
+      "end_frame": 833,
+      "duration_frames": 10,
+      "freeze_source_frame": 824,
+      "dropped_source_frames": [
+        825,
+        833
+      ]
+    },
+    {
+      "seq": 3,
+      "start_frame": 1444,
+      "end_frame": 1458,
+      "duration_frames": 15,
+      "freeze_source_frame": 1444,
+      "dropped_source_frames": [
+        1445,
+        1458
+      ]
+    },
+    {
+      "seq": 4,
+      "start_frame": 2062,
+      "end_frame": 2081,
+      "duration_frames": 20,
+      "freeze_source_frame": 2062,
+      "dropped_source_frames": [
+        2063,
+        2081
+      ]
+    },
+    {
+      "seq": 5,
+      "start_frame": 2743,
+      "end_frame": 2772,
+      "duration_frames": 30,
+      "freeze_source_frame": 2743,
+      "dropped_source_frames": [
+        2744,
+        2772
+      ]
+    }
+  ],
+  "note": "冻结期间重复显示 start_frame 对应源帧；事件结束后显示对应时间正常帧，源帧 start+1..end 未出现（丢帧），时间轴长度不变"
+}

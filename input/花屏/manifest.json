@@ -1,0 +1,78 @@
+{
+  "type": "corruption",
+  "type_cn": "花屏（合成）",
+  "fps": 30.0,
+  "width": 852,
+  "height": 480,
+  "total_frames": 2936,
+  "frame_pattern": "frame_%05d.png",
+  "layout_rule": "5 次事件（10/15/20/30/40 帧），间隔>=600 帧；起点沿用黑屏数据集运动区段",
+  "episodes": [
+    {
+      "seq": 1,
+      "start_frame": 63,
+      "end_frame": 72,
+      "duration_frames": 10,
+      "style": "frozen_region",
+      "region_ratio": [
+        0.3,
+        0.25,
+        0.36,
+        0.45
+      ]
+    },
+    {
+      "seq": 2,
+      "start_frame": 858,
+      "end_frame": 872,
+      "duration_frames": 15,
+      "style": "mosaic",
+      "region_ratio": [
+        0.1,
+        0.15,
+        0.3,
+        0.35
+      ]
+    },
+    {
+      "seq": 3,
+      "start_frame": 1503,
+      "end_frame": 1522,
+      "duration_frames": 20,
+      "style": "frozen_region",
+      "region_ratio": [
+        0.45,
+        0.4,
+        0.3,
+        0.4
+      ]
+    },
+    {
+      "seq": 4,
+      "start_frame": 2203,
+      "end_frame": 2232,
+      "duration_frames": 30,
+      "style": "mosaic",
+      "region_ratio": [
+        0.25,
+        0.3,
+        0.38,
+        0.45
+      ]
+    },
+    {
+      "seq": 5,
+      "start_frame": 2822,
+      "end_frame": 2861,
+      "duration_frames": 40,
+      "style": "frozen_region",
+      "region_ratio": [
+        0.15,
+        0.2,
+        0.34,
+        0.5
+      ]
+    }
+  ],
+  "note": "frozen_region=区域冻结(局部花屏)；mosaic=区域8px块量化(块效应)；由 tvqa inject-corruption 生成"
+}

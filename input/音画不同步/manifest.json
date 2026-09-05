@@ -1,0 +1,72 @@
+{
+  "type": "av_desync",
+  "type_cn": "音画不同步",
+  "fps": 30,
+  "source": "input/example.mp4 前 30 秒（10 个视频内容相同，仅偏移不同）",
+  "clip_seconds": 30,
+  "video_codec": "h264 (copy，零损失)",
+  "audio_codec": "aac",
+  "cases": [
+    {
+      "file": "video_lead_5f.mp4",
+      "offset_frames": 5,
+      "offset_ms": 167,
+      "desc": "视频提前（音频头部补静音，声音滞后画面）"
+    },
+    {
+      "file": "video_lag_5f.mp4",
+      "offset_frames": -5,
+      "offset_ms": -167,
+      "desc": "视频延后（裁掉音频头部，声音超前画面）"
+    },
+    {
+      "file": "video_lead_10f.mp4",
+      "offset_frames": 10,
+      "offset_ms": 333,
+      "desc": "视频提前（音频头部补静音，声音滞后画面）"
+    },
+    {
+      "file": "video_lag_10f.mp4",
+      "offset_frames": -10,
+      "offset_ms": -333,
+      "desc": "视频延后（裁掉音频头部，声音超前画面）"
+    },
+    {
+      "file": "video_lead_15f.mp4",
+      "offset_frames": 15,
+      "offset_ms": 500,
+      "desc": "视频提前（音频头部补静音，声音滞后画面）"
+    },
+    {
+      "file": "video_lag_15f.mp4",
+      "offset_frames": -15,
+      "offset_ms": -500,
+      "desc": "视频延后（裁掉音频头部，声音超前画面）"
+    },
+    {
+      "file": "video_lead_20f.mp4",
+      "offset_frames": 20,
+      "offset_ms": 667,
+      "desc": "视频提前（音频头部补静音，声音滞后画面）"
+    },
+    {
+      "file": "video_lag_20f.mp4",
+      "offset_frames": -20,
+      "offset_ms": -667,
+      "desc": "视频延后（裁掉音频头部，声音超前画面）"
+    },
+    {
+      "file": "video_lead_30f.mp4",
+      "offset_frames": 30,
+      "offset_ms": 1000,
+      "desc": "视频提前（音频头部补静音，声音滞后画面）"
+    },
+    {
+      "file": "video_lag_30f.mp4",
+      "offset_frames": -30,
+      "offset_ms": -1000,
+      "desc": "视频延后（裁掉音频头部，声音超前画面）"
+    }
+  ],
+  "reference": "ITU-R BT.1359: 音频滞后视频 >45ms 可察觉、>125ms 严重"
+}

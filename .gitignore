@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# 运行产物（本地保留，不入库：含会话归档/事件截图/日志）
+output/
+
+# 数据集帧序列体积大（完整集约 2.9GB）：仅入库各数据集的
+# manifest.json 与抽样帧（抽样帧用 git add -f 显式加入，见 docs/DATASETS.md）
+input/*/frame_*.png
+
+# 系统文件
+Thumbs.db
+.DS_Store
+.zcode/
+.motion_profile.npy
+AGENTS.md

@@ -1,0 +1,10 @@
+# 核心依赖（必需）
+opencv-python>=4.8
+numpy>=1.24
+PyYAML>=6.0
+imageio-ffmpeg>=0.4.9      # 音频解码与 L3 测试片生成的 ffmpeg 运行时
+pytest>=7.0
+
+# 可选依赖（缺省时对应后端不可用，工程自动降级，不影响仿真/评测链路）
+# sounddevice>=0.4.6        # 现场模式：采集卡音频输入（WASAPI）
+# pyserial>=3.5             # 现场模式：串口通道

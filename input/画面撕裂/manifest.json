@@ -1,0 +1,453 @@
+{
+  "type": "screen_tearing",
+  "type_cn": "画面撕裂",
+  "fps": 30,
+  "width": 852,
+  "height": 480,
+  "total_frames": 2936,
+  "frame_pattern": "frame_%05d.png",
+  "layout_rule": "5 次事件，持续 5/10/15/20/30 帧，间隔>=600 帧（20s）；起点落在运动区段",
+  "episodes": [
+    {
+      "seq": 1,
+      "start_frame": 63,
+      "end_frame": 67,
+      "duration_frames": 5,
+      "frames": [
+        {
+          "frame": 63,
+          "tear_y": 258,
+          "shift_x": 60
+        },
+        {
+          "frame": 64,
+          "tear_y": 252,
+          "shift_x": 35
+        },
+        {
+          "frame": 65,
+          "tear_y": 257,
+          "shift_x": -38
+        },
+        {
+          "frame": 66,
+          "tear_y": 256,
+          "shift_x": 17
+        },
+        {
+          "frame": 67,
+          "tear_y": 255,
+          "shift_x": -22
+        }
+      ]
+    },
+    {
+      "seq": 2,
+      "start_frame": 858,
+      "end_frame": 867,
+      "duration_frames": 10,
+      "frames": [
+        {
+          "frame": 858,
+          "tear_y": 260,
+          "shift_x": 26
+        },
+        {
+          "frame": 859,
+          "tear_y": 246,
+          "shift_x": -39
+        },
+        {
+          "frame": 860,
+          "tear_y": 254,
+          "shift_x": 35
+        },
+        {
+          "frame": 861,
+          "tear_y": 247,
+          "shift_x": 19
+        },
+        {
+          "frame": 862,
+          "tear_y": 255,
+          "shift_x": 50
+        },
+        {
+          "frame": 863,
+          "tear_y": 255,
+          "shift_x": -54
+        },
+        {
+          "frame": 864,
+          "tear_y": 251,
+          "shift_x": 45
+        },
+        {
+          "frame": 865,
+          "tear_y": 253,
+          "shift_x": 32
+        },
+        {
+          "frame": 866,
+          "tear_y": 257,
+          "shift_x": 41
+        },
+        {
+          "frame": 867,
+          "tear_y": 250,
+          "shift_x": -28
+        }
+      ]
+    },
+    {
+      "seq": 3,
+      "start_frame": 1503,
+      "end_frame": 1517,
+      "duration_frames": 15,
+      "frames": [
+        {
+          "frame": 1503,
+          "tear_y": 279,
+          "shift_x": 40
+        },
+        {
+          "frame": 1504,
+          "tear_y": 274,
+          "shift_x": 33
+        },
+        {
+          "frame": 1505,
+          "tear_y": 283,
+          "shift_x": -49
+        },
+        {
+          "frame": 1506,
+          "tear_y": 278,
+          "shift_x": -44
+        },
+        {
+          "frame": 1507,
+          "tear_y": 274,
+          "shift_x": 33
+        },
+        {
+          "frame": 1508,
+          "tear_y": 270,
+          "shift_x": -47
+        },
+        {
+          "frame": 1509,
+          "tear_y": 281,
+          "shift_x": 51
+        },
+        {
+          "frame": 1510,
+          "tear_y": 273,
+          "shift_x": -27
+        },
+        {
+          "frame": 1511,
+          "tear_y": 270,
+          "shift_x": 15
+        },
+        {
+          "frame": 1512,
+          "tear_y": 278,
+          "shift_x": -51
+        },
+        {
+          "frame": 1513,
+          "tear_y": 273,
+          "shift_x": -26
+        },
+        {
+          "frame": 1514,
+          "tear_y": 271,
+          "shift_x": -29
+        },
+        {
+          "frame": 1515,
+          "tear_y": 274,
+          "shift_x": 52
+        },
+        {
+          "frame": 1516,
+          "tear_y": 279,
+          "shift_x": -46
+        },
+        {
+          "frame": 1517,
+          "tear_y": 281,
+          "shift_x": 29
+        }
+      ]
+    },
+    {
+      "seq": 4,
+      "start_frame": 2117,
+      "end_frame": 2136,
+      "duration_frames": 20,
+      "frames": [
+        {
+          "frame": 2117,
+          "tear_y": 266,
+          "shift_x": -55
+        },
+        {
+          "frame": 2118,
+          "tear_y": 266,
+          "shift_x": 28
+        },
+        {
+          "frame": 2119,
+          "tear_y": 273,
+          "shift_x": -57
+        },
+        {
+          "frame": 2120,
+          "tear_y": 266,
+          "shift_x": 36
+        },
+        {
+          "frame": 2121,
+          "tear_y": 265,
+          "shift_x": -60
+        },
+        {
+          "frame": 2122,
+          "tear_y": 267,
+          "shift_x": 18
+        },
+        {
+          "frame": 2123,
+          "tear_y": 261,
+          "shift_x": -34
+        },
+        {
+          "frame": 2124,
+          "tear_y": 260,
+          "shift_x": 55
+        },
+        {
+          "frame": 2125,
+          "tear_y": 263,
+          "shift_x": 40
+        },
+        {
+          "frame": 2126,
+          "tear_y": 263,
+          "shift_x": -30
+        },
+        {
+          "frame": 2127,
+          "tear_y": 274,
+          "shift_x": -41
+        },
+        {
+          "frame": 2128,
+          "tear_y": 268,
+          "shift_x": 43
+        },
+        {
+          "frame": 2129,
+          "tear_y": 263,
+          "shift_x": -25
+        },
+        {
+          "frame": 2130,
+          "tear_y": 269,
+          "shift_x": -52
+        },
+        {
+          "frame": 2131,
+          "tear_y": 261,
+          "shift_x": 38
+        },
+        {
+          "frame": 2132,
+          "tear_y": 267,
+          "shift_x": 39
+        },
+        {
+          "frame": 2133,
+          "tear_y": 267,
+          "shift_x": -18
+        },
+        {
+          "frame": 2134,
+          "tear_y": 272,
+          "shift_x": -16
+        },
+        {
+          "frame": 2135,
+          "tear_y": 274,
+          "shift_x": -17
+        },
+        {
+          "frame": 2136,
+          "tear_y": 269,
+          "shift_x": -18
+        }
+      ]
+    },
+    {
+      "seq": 5,
+      "start_frame": 2743,
+      "end_frame": 2772,
+      "duration_frames": 30,
+      "frames": [
+        {
+          "frame": 2743,
+          "tear_y": 236,
+          "shift_x": -24
+        },
+        {
+          "frame": 2744,
+          "tear_y": 237,
+          "shift_x": 24
+        },
+        {
+          "frame": 2745,
+          "tear_y": 229,
+          "shift_x": 51
+        },
+        {
+          "frame": 2746,
+          "tear_y": 231,
+          "shift_x": 38
+        },
+        {
+          "frame": 2747,
+          "tear_y": 233,
+          "shift_x": -49
+        },
+        {
+          "frame": 2748,
+          "tear_y": 235,
+          "shift_x": 44
+        },
+        {
+          "frame": 2749,
+          "tear_y": 237,
+          "shift_x": -52
+        },
+        {
+          "frame": 2750,
+          "tear_y": 234,
+          "shift_x": -24
+        },
+        {
+          "frame": 2751,
+          "tear_y": 237,
+          "shift_x": 52
+        },
+        {
+          "frame": 2752,
+          "tear_y": 239,
+          "shift_x": -53
+        },
+        {
+          "frame": 2753,
+          "tear_y": 226,
+          "shift_x": -19
+        },
+        {
+          "frame": 2754,
+          "tear_y": 238,
+          "shift_x": 25
+        },
+        {
+          "frame": 2755,
+          "tear_y": 232,
+          "shift_x": 16
+        },
+        {
+          "frame": 2756,
+          "tear_y": 227,
+          "shift_x": -29
+        },
+        {
+          "frame": 2757,
+          "tear_y": 236,
+          "shift_x": -30
+        },
+        {
+          "frame": 2758,
+          "tear_y": 242,
+          "shift_x": 33
+        },
+        {
+          "frame": 2759,
+          "tear_y": 235,
+          "shift_x": 26
+        },
+        {
+          "frame": 2760,
+          "tear_y": 228,
+          "shift_x": -40
+        },
+        {
+          "frame": 2761,
+          "tear_y": 230,
+          "shift_x": -58
+        },
+        {
+          "frame": 2762,
+          "tear_y": 240,
+          "shift_x": -37
+        },
+        {
+          "frame": 2763,
+          "tear_y": 234,
+          "shift_x": -23
+        },
+        {
+          "frame": 2764,
+          "tear_y": 242,
+          "shift_x": 52
+        },
+        {
+          "frame": 2765,
+          "tear_y": 241,
+          "shift_x": 46
+        },
+        {
+          "frame": 2766,
+          "tear_y": 235,
+          "shift_x": -56
+        },
+        {
+          "frame": 2767,
+          "tear_y": 235,
+          "shift_x": -39
+        },
+        {
+          "frame": 2768,
+          "tear_y": 233,
+          "shift_x": 23
+        },
+        {
+          "frame": 2769,
+          "tear_y": 231,
+          "shift_x": -31
+        },
+        {
+          "frame": 2770,
+          "tear_y": 235,
+          "shift_x": -22
+        },
+        {
+          "frame": 2771,
+          "tear_y": 240,
+          "shift_x": 59
+        },
+        {
+          "frame": 2772,
+          "tear_y": 226,
+          "shift_x": -46
+        }
+      ]
+    }
+  ],
+  "note": "撕裂窗口内帧的 [tear_y:] 下半段水平平移 shift_x 像素、露边填黑；帧内容正常推进不丢帧；5 次事件位于不同画面场景"
+}
