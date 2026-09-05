@@ -119,6 +119,9 @@ python -m tvqa inject-corruption --base input/frames --out input/花屏
 
 抽样帧保留原始命名，`frames_dir` 后端可直接读入跑通「检测 → 匹配 → 记分」全链路。
 
+> **数据来源声明**：数据集使用的原视频来源于哔哩哔哩
+> [BV1kp4R6FEHL](https://www.bilibili.com/video/BV1kp4R6FEHL/)，版权归原作者所有，仅用于本项目的功能测试与演示，不作任何商业用途。
+
 ## License
 
 [MIT](LICENSE) © 2026 MerlinShieh

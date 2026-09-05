@@ -11,6 +11,7 @@
 ## 0. 基准内容
 
 - 来源：`input/example.mp4` 前 2936 帧（约 97.87 秒 @ 30fps，852×480）切帧，即 `input/frames/`。
+- **原视频来源于哔哩哔哩：https://www.bilibili.com/video/BV1kp4R6FEHL/ （版权归原作者所有），仅用于本项目的功能测试与演示，不作任何商业用途。**
 - `example.mp4` / `example_video.mp4`（纯视频）/ `example_audio.m4a`（纯音频）一并入库，供音画同步分析使用。
 - `frames/` 本身也是评测的「正常基线」：检测器在其上应零报事件。
 
